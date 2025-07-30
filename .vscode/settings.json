@@ -19,6 +19,15 @@
   "[django-html]": {
     "editor.formatOnSave": false
   },
+
+      "files.associations": {
+        "*.html": "html",
+        "*.django-html": "html",
+        "**/templates/**/*.html": "django-html"
+    },
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
   "[python]": {
     "editor.defaultFormatter": "ms-python.python",
     "editor.tabSize": 4,
