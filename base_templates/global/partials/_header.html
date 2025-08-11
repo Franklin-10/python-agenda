@@ -1,12 +1,12 @@
 <header class="header">
   <h1 class="header-heading">
-    <a href="{% url  'contact:index' %}" class="header-link">Agenda2</a>
+    <a href="{% url  'contact:index' %}" class="header-link">Agenda 2</a>
   </h1>
   <nav class="menu">
     <ul class="menu-list">
       {% if user.is_authenticated %}
       <li class="menu-item">
-        <a href="{% url " contact:create" %}" class="menu-link">
+        <a href="{% url 'contact:create' %}" class="menu-link">
           Create
         </a>
       </li>
