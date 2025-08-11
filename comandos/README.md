@@ -1,4 +1,3 @@
-
 Iniciar o projeto Django
 
 ```

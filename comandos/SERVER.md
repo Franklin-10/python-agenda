@@ -34,7 +34,7 @@ sudo apt autoremove -y
 sudo apt install build-essential -y
 
 sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt install python3.11 python3.11-venv
+sudo apt install python3.11 python3.11-venv -y
 
 sudo apt install nginx -y
 sudo apt install certbot python3-certbot-nginx -y
@@ -90,11 +90,11 @@ git pull agendarepo main
 ```
 sudo -u postgres psql
 
-postgres=# create role usuario_agenda with login superuser createdb createrole password 'senha_usuario_agenda';
+postgres=# create role meu_usuario with login superuser createdb createrole password 'senha_do_usuario';
 CREATE ROLE
-postgres=# create database projeto_agenda with owner usuario_agenda;
+postgres=# create database base_de_dados with owner meu_usuario;
 CREATE DATABASE
-postgres=# grant all privileges on database projeto_agenda to usuario_agenda;
+postgres=# grant all privileges on database base_de_dados to meu_usuario;
 GRANT
 postgres=# \q
 
